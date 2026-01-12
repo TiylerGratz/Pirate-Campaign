@@ -1,7 +1,4 @@
 ---
-title: My GitHub Pages Notebook!
+title: Aezirath
 ---
 
-Hello world!
-
-Write some words here!
