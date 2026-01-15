@@ -12,11 +12,24 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
+    enableSidebarToggle: true,
+    pageLayout: {
+      header: [
+        "navbar",   
+      ],
+      left: [
+        "explorer", 
+      ],
+      right: [
+        "toc",    
+      ],
+    },
+    
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "Pirate-Campaign",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
     theme: {
