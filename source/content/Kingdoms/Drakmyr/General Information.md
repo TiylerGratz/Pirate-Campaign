@@ -19,7 +19,6 @@
 - Meilir Pritchett
 - Irfon Mathias
 
-
 ### People
 **Population**: 
 
