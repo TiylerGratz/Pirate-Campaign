@@ -12,6 +12,15 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
+    pageLayout: {
+      left: [
+        "explorer", 
+      ],
+      right: [
+        "toc",    
+      ],
+    },
+    
     analytics: {
       provider: "plausible",
     },
