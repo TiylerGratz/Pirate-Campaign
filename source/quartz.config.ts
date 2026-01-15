@@ -13,6 +13,9 @@ const config: QuartzConfig = {
     enableSPA: true,
     enablePopovers: true,
     pageLayout: {
+      header: [
+        "navbar",   
+      ],
       left: [
         "explorer", 
       ],
