@@ -12,6 +12,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
+    enableSidebarToggle: true,
     pageLayout: {
       header: [
         "navbar",   
