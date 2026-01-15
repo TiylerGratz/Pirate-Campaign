@@ -1,10 +1,11 @@
+### Government
 **Type**: Monarchy 
 
 **Capital**: Elnavar
 
 **Leader**: Xaltharion Veltharis
 
-**Members of the Royal Court**:
+**Royal Court**:
 - Iszadora Azzereth
 - Grultus Jorcuthedub
 - Dophaz Malinen
@@ -17,6 +18,10 @@
 - Anwas Tanner
 - Meilir Pritchett
 - Irfon Mathias
+
+
+### People
+**Population**: 
 
 **Demographics**: 
 - Tiefling: 25%
