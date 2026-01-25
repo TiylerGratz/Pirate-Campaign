@@ -1,6 +1,6 @@
 ```
 ---
-aliases: [General Information]
+title: [General Information]
 ---
 ```
 ### Government
