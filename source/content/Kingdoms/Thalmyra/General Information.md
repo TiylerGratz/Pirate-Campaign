@@ -9,7 +9,7 @@ Branches:
 - Civic Optimization
 
 ### People
-**Population**: 
+**Population**: 7.1 million
 
 **Demographics**: 
 - 

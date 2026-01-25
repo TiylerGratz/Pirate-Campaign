@@ -6,7 +6,7 @@
 **Leader**: 
 
 ### People
-**Population**: 
+**Population**: 330,000
 
 **Demographics**: 
 - 

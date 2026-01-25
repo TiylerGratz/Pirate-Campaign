@@ -1,12 +1,12 @@
 ### Government
-**Type**:
+**Type**: Monarchy
 
-**Capital**: 
+**Capital**: Varneth
 
-**Leader**: 
+**Leader**: King Cadrin Volsen
 
 ### People
-**Population**: 
+**Population**: 10 million
 
 **Demographics**: 
 - 

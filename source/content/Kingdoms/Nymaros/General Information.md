@@ -1,12 +1,12 @@
 ### Government
 **Type**:
 
-**Capital**: 
+**Capital**: Aelyndra’s Crown
 
-**Leader**: Aelyndra’s Crown
+**Leader**: 
 
 ### People
-**Population**: 
+**Population**: 840,000
 
 **Demographics**: 
 - 

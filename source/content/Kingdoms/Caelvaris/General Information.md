@@ -6,7 +6,7 @@
 **Leader**: Chancellor Lyrissa Veinshade
 
 ### People
-**Population**: 
+**Population**: 792,000
 
 **Demographics**: 
 - 

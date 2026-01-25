@@ -7,7 +7,7 @@
 - 
 
 ### People
-**Population**: 
+**Population**: 3.9 million
 
 **Demographics**: 
 - 
