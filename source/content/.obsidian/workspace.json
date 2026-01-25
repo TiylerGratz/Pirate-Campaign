@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Velkara/index.md",
+                "file": "Pantheon/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -172,6 +172,9 @@
   },
   "active": "47ef711f7e8c1d64",
   "lastOpenFiles": [
+    "Pantheon/Deities.md",
+    "Pantheon/index.md",
+    "Kingdoms/Velkara/index.md",
     "Kingdoms/Velkara/General Information.md",
     "Kingdoms/Thalmyra/index.md",
     "Kingdoms/Thalmyra/General Information.md",
@@ -189,16 +192,13 @@
     "Kingdoms/Luscalis/General Information.md",
     "Kingdoms/Elarion/index.md",
     "Kingdoms/Elarion/General Information.md",
-    "Kingdoms/Velkara/index.md",
     "Kingdoms/Caelvaris/index.md",
     "Kingdoms/Caelvaris/General Information.md",
     "Kingdoms/Drakmyr/index.md",
     "Kingdoms/Drakmyr/General Information.md",
     "Kingdoms/Contested Locations.md",
-    "Pantheon/Deities.md",
     "category-folder/Some note.md",
     "Kingdoms",
-    "category-folder/index.md",
     "category-folder"
   ]
 }
