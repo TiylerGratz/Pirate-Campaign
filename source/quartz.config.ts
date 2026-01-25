@@ -12,19 +12,6 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    enableSidebarToggle: true,
-    pageLayout: {
-      header: [
-        "navbar",   
-      ],
-      left: [
-        "explorer", 
-      ],
-      right: [
-        "toc",    
-      ],
-    },
-    
     analytics: {
       provider: "plausible",
     },
@@ -65,7 +52,18 @@ const config: QuartzConfig = {
         },
       },
     },
-  },
+    pageLayout: {
+      header: ["navbar", "sidebarToggle"], 
+      left: ["explorer"],                  
+      right: ["toc"],                      
+    },
+    sidebar: {
+      collapsed: true,                     
+    },
+    markdown: {
+      allowDangerousHtml: true,
+    },
+  } as any,
   plugins: {
     transformers: [
       Plugin.FrontMatter(),

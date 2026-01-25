@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Drakmyr/General Information.md",
+                "file": "Pantheon/Deities.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "General Information"
+              "title": "Deities"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "47ef711f7e8c1d64",
   "lastOpenFiles": [
-    "Kingdoms/Caelvaris/General Information.md",
     "Kingdoms/Drakmyr/General Information.md",
+    "Kingdoms/Caelvaris/General Information.md",
     "Kingdoms/Velkara/General Information.md",
     "Kingdoms/Thalmyra/General Information.md",
     "Kingdoms/Skalvaan/General Information.md",
