@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Contested Locations.md",
+                "file": "Kingdoms/Caelvaris/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Contested Locations"
+              "title": "index"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "47ef711f7e8c1d64",
   "lastOpenFiles": [
-    "Kingdoms/Elarion/General Information.md",
     "Kingdoms/Contested Locations.md",
+    "Kingdoms/Elarion/General Information.md",
     "Kingdoms/Lyvona/General Information.md",
     "Kingdoms/Luscalis/General Information.md",
     "Kingdoms/Caelvaris/General Information.md",
