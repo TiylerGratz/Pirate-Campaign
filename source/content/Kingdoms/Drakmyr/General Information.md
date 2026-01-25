@@ -24,4 +24,11 @@
 **Population**: 3.4 million
 
 **Demographics**: 
-- Tiefling: 25%
+- Lesser Devil: 37%
+- Tiefling: 27%
+- Greater Devil: 12%
+- Dwarf: 8%
+- Human: 6%
+- Elf: 5%
+- Gnome: 3% 
+- Other: 2%
