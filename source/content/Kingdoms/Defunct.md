@@ -1,3 +1,3 @@
 ###### Phataniel Empire
-- Encompassed the lands of present-day [[Velkara/index|Velkara]],  [[Elarion/index|Elarion]], and  [[Luscalis/index|Luscalis]]
+- Encompassed the lands of present-day [[Kingdoms/Velkara/index|Velkara]],  [[Kingdoms/Elarion/index|Elarion]], and  [[Kingdoms/Luscalis/index|Luscalis]]
 - Collapsed on 8 Maethen, 3046
