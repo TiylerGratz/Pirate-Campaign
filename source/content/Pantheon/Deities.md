@@ -5,6 +5,7 @@ Major (current)
 - Izelon: God of Time, Inevitability, and Destiny
 - Kaelgrim: God of Battle, Honor, and Conquest
 - Liora: Goddess of Light
+- Maethe: Goddess of Memories, Longing, and Nostalgia
 - Nyraxis: Goddess of the Sea and Moon
 - Thamior: God of Harvest and Life
 - Thrixel: God of Chaos
@@ -13,7 +14,6 @@ Major (current)
 
 Minor 
 - Yahweh: God of Judgment, Mercy, and Faith
-- Maethe: Goddess of Longing , Nostalgia, and Lost Loves
 
 Past 
 - Aionis: God of Creation 

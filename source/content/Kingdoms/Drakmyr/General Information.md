@@ -21,7 +21,7 @@
 
 
 ### People
-**Population**: 
+**Population**: 3.4 million
 
 **Demographics**: 
 - Tiefling: 25%

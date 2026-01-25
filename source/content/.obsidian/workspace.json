@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Drakmyr/General Information.md",
+                "file": "Kingdoms/Velkara/General Information.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#populatio",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -171,10 +170,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "47ef711f7e8c1d64",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
-    "Pantheon/Deities.md",
+    "Kingdoms/Thalmyra/General Information.md",
+    "Kingdoms/Nyssara/General Information.md",
+    "Kingdoms/Skalvaan/General Information.md",
+    "Kingdoms/Nymaros/General Information.md",
+    "Kingdoms/Marewyn/General Information.md",
+    "Kingdoms/Lyvona/General Information.md",
+    "Kingdoms/Luscalis/General Information.md",
+    "Kingdoms/Velkara/General Information.md",
+    "Kingdoms/Elarion/General Information.md",
+    "Kingdoms/Caelvaris/General Information.md",
     "Kingdoms/Drakmyr/General Information.md",
+    "Pantheon/Deities.md",
     "category-folder/Some note.md",
     "Kingdoms",
     "category-folder/index.md",
