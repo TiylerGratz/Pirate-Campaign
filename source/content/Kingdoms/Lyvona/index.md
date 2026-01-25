@@ -2,7 +2,7 @@
 title: Lyvona
 ---
 ### Government
-**Type**:
+**Type**: Syndicalist Republic
 
 **Capital**: Emvarra
 

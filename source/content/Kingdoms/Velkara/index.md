@@ -7,7 +7,12 @@ title: Velkara
 **Capital**: Lunvarra
 
 **Leaders**:
-- 
+- Valentin Lindroth
+- Iris Sparre
+- Lilian Lindeman
+- Vernik Widforss
+- Valter Ekholm
+- Elsi Syrén
 
 ### People
 **Population**: 3.9 million

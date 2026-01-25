@@ -2,7 +2,7 @@
 title: Nymaros
 ---
 ### Government
-**Type**:
+**Type**: Magocracy
 
 **Capital**: Aelyndra’s Crown
 

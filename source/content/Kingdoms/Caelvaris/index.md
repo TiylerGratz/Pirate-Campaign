@@ -1,7 +1,6 @@
 ---
 title: Caelvaris
 ---
-
 ### Government
 **Type**: Two-Tier Electoral Republic 
 

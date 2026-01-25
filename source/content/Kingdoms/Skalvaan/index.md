@@ -2,11 +2,11 @@
 title: Skalvaan
 ---
 ### Government
-**Type**:
+**Type**: Theocracy
 
 **Capital**: Marquessis
 
-**Leader**: 
+**Leader**: Nerion
 
 ### People
 **Population**: 330,000

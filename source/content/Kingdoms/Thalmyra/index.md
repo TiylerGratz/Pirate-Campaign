@@ -10,7 +10,14 @@ title: Thalmyra
 
 Branches: 
 - Civic Optimization
-
+- Resource Extraction & Management
+- Infrastructure Management
+- Knowledge & Research Advancement
+- Economic Optimization
+- Legal Systems & Ethical Compliance
+- Cultural & Societal Integration
+- Security & Strategic Systems
+- Diplomatic & External Systems
 ### People
 **Population**: 7.1 million
 

@@ -27,6 +27,7 @@ Minor
 - Thesara: Goddess of Music and Dance
 - Polimar: God of Innovation, Invention, and Craft
 - Vaeril: God of Stars
+- Nerion: God of Darkness and the Depths
 
 Past 
 - Aionis: God of Creation 
