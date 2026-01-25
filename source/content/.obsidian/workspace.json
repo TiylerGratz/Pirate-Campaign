@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pantheon/index.md",
+                "file": "Kingdoms/Defunct.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Defunct"
             }
           }
         ]
@@ -172,9 +172,10 @@
   },
   "active": "47ef711f7e8c1d64",
   "lastOpenFiles": [
-    "Pantheon/Deities.md",
-    "Pantheon/index.md",
     "Kingdoms/Velkara/index.md",
+    "Kingdoms/Defunct.md",
+    "Pantheon/index.md",
+    "Pantheon/Deities.md",
     "Kingdoms/Velkara/General Information.md",
     "Kingdoms/Thalmyra/index.md",
     "Kingdoms/Thalmyra/General Information.md",
@@ -197,7 +198,6 @@
     "Kingdoms/Drakmyr/index.md",
     "Kingdoms/Drakmyr/General Information.md",
     "Kingdoms/Contested Locations.md",
-    "category-folder/Some note.md",
     "Kingdoms",
     "category-folder"
   ]
