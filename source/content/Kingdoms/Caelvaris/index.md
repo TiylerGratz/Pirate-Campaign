@@ -1,8 +1,7 @@
-```
 ---
-title: [General Information]
+title: General Information
 ---
-```
+
 ### Government
 **Type**: Two-Tier Electoral Republic 
 
