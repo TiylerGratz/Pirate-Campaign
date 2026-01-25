@@ -52,17 +52,6 @@ const config: QuartzConfig = {
         },
       },
     },
-    pageLayout: {
-      header: ["navbar", "sidebarToggle"], 
-      left: ["explorer"],                  
-      right: ["toc"],                      
-    },
-    sidebar: {
-      collapsed: true,                     
-    },
-    markdown: {
-      allowDangerousHtml: true,
-    },
   } as any,
   plugins: {
     transformers: [
