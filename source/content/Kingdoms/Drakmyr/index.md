@@ -22,18 +22,18 @@ title: Drakmyr
 - Meilir Pritchett
 - Irfon Mathias
 
-
 ### People
 **Population**: 3.4 million
 
 **Demographics**: 
-- Lesser Devil: 39%
-- Tiefling: 26%
-- Greater Devil: 12%
-- Dwarf: 6%
-- Orc 5%
-- Human: 4%
-- Halfling: 3%
-- Elf: 2%
-- Gnome: 2% 
-- Other: 1%
+- Lesser Devil (38%)
+- Tiefling (24%)
+- Greater Devil (12%)
+- Dwarf (6%)
+- Orc (5%)
+- Human (4%)
+- Halfling (3%)
+- Elf (2%)
+- Gnome (2%)
+- Dragonborn (1%)
+- Other (3%)
