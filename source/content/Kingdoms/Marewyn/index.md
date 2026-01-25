@@ -6,8 +6,7 @@ title: Marewyn
 
 **Capital**: Cerethorne
 
-**Leader**:  Queen Rosalind Virell (not present)
-
+**Leader**:  Queen Rosalind Virell 
 ### People
 **Population**: 1.1 million
 
