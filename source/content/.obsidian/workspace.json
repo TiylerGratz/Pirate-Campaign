@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Drakmyr/History.md",
+                "file": "Kingdoms/Drakmyr/General Information.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "History"
+              "title": "General Information"
             }
           }
         ]
@@ -172,8 +172,9 @@
   },
   "active": "97aeee2cc56e197b",
   "lastOpenFiles": [
-    "Kingdoms/Drakmyr/General Information.md",
+    "Kingdoms/Nyssara/index.md",
     "Kingdoms/Drakmyr/History.md",
+    "Kingdoms/Drakmyr/General Information.md",
     "Untitled.base",
     "Pantheon/Deities.md",
     "category-folder/Some note.md",
