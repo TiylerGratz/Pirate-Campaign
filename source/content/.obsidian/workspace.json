@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Elarion/History.md",
+                "file": "Kingdoms/Defunct/Phataniel Empire/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "History"
+              "title": "index"
             }
           }
         ]
@@ -183,14 +183,14 @@
   "active": "d160f9de345c4d65",
   "lastOpenFiles": [
     "Kingdoms/Drakmyr/History.md",
-    "Kingdoms/Defunct/Phataniel Empire/index.md",
     "Kingdoms/Velkara/History.md",
+    "Kingdoms/Elarion/History.md",
+    "Kingdoms/Defunct/Phataniel Empire/index.md",
     "Kingdoms/Velkara/index.md",
     "Kingdoms/Skalvaan/index.md",
     "Pantheon/index.md",
     "Kingdoms/Defunct/index.md",
     "Kingdoms/Contested Locations.md",
-    "Kingdoms/Elarion/History.md",
     "Kingdoms/Elarion/index.md",
     "Kingdoms/Defunct.md",
     "Kingdoms/Drakmyr/index.md",

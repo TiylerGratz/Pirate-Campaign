@@ -3,4 +3,4 @@
 - Fortunately, the Druids found that many of these fey and creatures had similar beliefs to them
 - They were able to live in harmony together and formed their own kingdom where those who wanted to escape the [[Kingdoms/Defunct/Phataniel Empire/index|Phataniel Empire]] could take refuge
 
----
+
