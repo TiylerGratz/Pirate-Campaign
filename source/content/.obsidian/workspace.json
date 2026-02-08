@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Defunct/index.md",
+                "file": "Pantheon/History.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "History"
             }
           }
         ]
@@ -182,17 +182,20 @@
   },
   "active": "d160f9de345c4d65",
   "lastOpenFiles": [
+    "Pantheon/index.md",
+    "Pantheon/History.md",
+    "Kingdoms/Velkara/index.md",
+    "Kingdoms/Velkara/History.md",
     "Kingdoms/Defunct/Phataniel Empire/index.md",
+    "Kingdoms/Defunct/index.md",
     "Kingdoms/Drakmyr/index.md",
     "Kingdoms/Drakmyr/History.md",
     "Kingdoms/Elarion/History.md",
-    "Kingdoms/Velkara/index.md",
-    "Kingdoms/Velkara/History.md",
-    "Kingdoms/Defunct/index.md",
     "Kingdoms/Elarion/index.md",
+    "Kingdoms/Luscalis/index.md",
+    "Kingdoms/Marewyn/History.md",
     "Kingdoms/Nyssara/index.md",
     "Kingdoms/Skalvaan/index.md",
-    "Pantheon/index.md",
     "Kingdoms/Contested Locations.md",
     "Kingdoms/Defunct.md",
     "Kingdoms/Defunct/Phataniel Empire",
@@ -202,7 +205,6 @@
     "conflict-files-obsidian-git.md",
     "Kingdoms/Marewyn/index.md",
     "Kingdoms/Caelvaris/index.md",
-    "Kingdoms/Luscalis/index.md",
     "Kingdoms/Lyvona/index.md",
     "Kingdoms/Nymaros/index.md",
     "Kingdoms/Thalmyra/index.md",
@@ -210,7 +212,6 @@
     "Elarion/General Information.md",
     "Elarion",
     "Pantheon/Deities.md",
-    "Kingdoms/Velkara/General Information.md",
     "Kingdoms",
     "category-folder"
   ]
