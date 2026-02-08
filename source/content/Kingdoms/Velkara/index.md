@@ -6,7 +6,7 @@ title: Velkara
 
 **Capital**: Lunvarra
 
-**Founded**: 15 Thamioris, 1052
+**Founded**: [[Kingdoms/Velkara/History#15 Thamioris, 1052 Velkara was founded|15 Thamioris, 1052]]
 
 **Leaders**:
 - Valentin Lindroth

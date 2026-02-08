@@ -8,7 +8,7 @@ title: Elarion
 
 **Leader**: King Cadrin Volsen
 
-**Founded**: Nyraxiel 2, 4296
+**Founded**: [[Kingdoms/Elarion/History#Nyraxiel 2, 4296 Elarion War of Independence Ends|Nyraxiel 2, 4296]]
 
 ### People
 **Population**: 10 million
