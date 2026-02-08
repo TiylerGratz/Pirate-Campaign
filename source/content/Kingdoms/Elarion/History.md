@@ -1,5 +1,4 @@
 
----
 ### Kaelgrimn 14, 4274: Elarion War of Independence Starts 
 
 
