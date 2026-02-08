@@ -8,6 +8,8 @@ title: Elarion
 
 **Leader**: King Cadrin Volsen
 
+**Founded**: Nyraxiel 2, 4296
+
 ### People
 **Population**: 10 million
 
