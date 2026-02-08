@@ -6,6 +6,8 @@ title: Velkara
 
 **Capital**: Lunvarra
 
+**Founded**: 15 Thamioris, 1052
+
 **Leaders**:
 - Valentin Lindroth
 - Iris Sparre
@@ -27,6 +29,3 @@ title: Velkara
 - Gnome (5%)
 - Halfling (4%)
 - Other (3%)
-
-### History
-- Founded: 15 Thamioris, 1052

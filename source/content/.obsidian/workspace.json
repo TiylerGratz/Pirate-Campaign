@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "05d6bf6ede860737",
+        "id": "1bc8642ac5f1e338",
         "type": "tabs",
         "children": [
           {
-            "id": "7e98849fd447aea6",
+            "id": "d160f9de345c4d65",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Kingdoms/Defunct/Phataniel Empire/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "index"
             }
           }
         ]
@@ -176,36 +180,38 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b77831b90dd9f87b",
+  "active": "d160f9de345c4d65",
   "lastOpenFiles": [
-    "conflict-files-obsidian-git.md",
-    "Untitled.base",
+    "Kingdoms/Defunct.md",
+    "Kingdoms/Defunct/Phataniel Empire/index.md",
+    "Kingdoms/Elarion/index.md",
+    "Kingdoms/Drakmyr/index.md",
     "Kingdoms/Drakmyr/History.md",
+    "Kingdoms/Defunct/Phataniel Empire",
+    "Kingdoms/Defunct/Untitled.md",
+    "Kingdoms/Defunct/index.md",
+    "Kingdoms/Defunct",
+    "Kingdoms/Velkara/History.md",
+    "Kingdoms/Velkara/index.md",
     "Kingdoms/Drakmyr/General Information.md",
+    "Untitled.base",
+    "conflict-files-obsidian-git.md",
     "Kingdoms/Marewyn/index.md",
     "Kingdoms/Caelvaris/index.md",
-    "Kingdoms/Drakmyr/index.md",
-    "Kingdoms/Elarion/index.md",
     "Kingdoms/Luscalis/index.md",
     "Kingdoms/Lyvona/index.md",
     "Kingdoms/Nymaros/index.md",
     "Kingdoms/Nyssara/index.md",
     "Kingdoms/Skalvaan/index.md",
     "Kingdoms/Thalmyra/index.md",
-    "Kingdoms/Velkara/index.md",
     "Pantheon/index.md",
     "Kingdoms/Contested Locations.md",
-    "Kingdoms/Defunct.md",
     "Elarion.md",
     "Elarion/General Information.md",
     "Elarion",
     "Pantheon/Deities.md",
     "Kingdoms/Velkara/General Information.md",
     "Kingdoms/Thalmyra/General Information.md",
-    "Kingdoms/Skalvaan/General Information.md",
-    "Kingdoms/Nyssara/General Information.md",
-    "Kingdoms/Nymaros/General Information.md",
-    "Kingdoms/Marewyn/General Information.md",
     "Kingdoms",
     "category-folder"
   ]
