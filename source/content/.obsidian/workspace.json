@@ -4,37 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "0571c1c94d829fac",
+        "id": "05d6bf6ede860737",
         "type": "tabs",
         "children": [
           {
-            "id": "47ef711f7e8c1d64",
+            "id": "7e98849fd447aea6",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "source/content/.obsidian/workspace.json",
-                "staged": false
-              },
-              "icon": "git-pull-request",
-              "title": "Diff View (workspace.json)"
-            }
-          },
-          {
-            "id": "dc51f231f6d9aa2f",
-            "type": "leaf",
-            "state": {
-              "type": "diff-view",
-              "state": {
-                "file": "source/content/Kingdoms/Drakmyr/General Information.md",
-                "staged": true
-              },
-              "icon": "git-pull-request",
-              "title": "Diff View (General Information)"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -193,7 +176,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dc51f231f6d9aa2f",
+  "active": "b77831b90dd9f87b",
   "lastOpenFiles": [
     "conflict-files-obsidian-git.md",
     "Untitled.base",
