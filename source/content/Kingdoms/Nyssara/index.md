@@ -6,7 +6,27 @@ title: Nyssara
 
 **Capital**: Coralithe
 
-**Leader**: 
+**Council**: 
+- Evangeline Cowan
+- Adelyn Granholm
+- Braxton Wellington
+- Brooks Tanner
+- London Zimmer
+- Willow Wiseman
+- Jasmine Burt
+- Kendra Brant
+- Addison Dawson
+- Kayla Cardinal
+- Selena McLeod
+- Brandon Lane
+- Griffin Clifton
+- Elijah Beaton
+- Maverick Ostell
+- Jeremy Anderson
+- Emmett Tillsley
+- Killian Rogers
+- Connor Gallant
+- Markus Wilkinson
 
 ### People
 **Population**: 2.9 million
