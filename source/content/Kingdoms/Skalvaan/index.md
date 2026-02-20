@@ -6,7 +6,7 @@ title: Skalvaan
 
 **Capital**: Marquessis
 
-**Leader**: Nerion
+**Leader**: Unknown
 
 ### People
 **Population**: 330,000
