@@ -28,6 +28,7 @@ Minor
 - Polimar: God of Innovation, Invention, and Craft
 - Vaeril: God of Stars
 - Nerion: God of Darkness and the Depths
+- Pelarys: Goddess of Marine Life and Balance
 
 Past 
 - Aionis: God of Creation 

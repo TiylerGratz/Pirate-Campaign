@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Skalvaan/index.md",
+                "file": "Pantheon/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,6 +183,7 @@
   "active": "d160f9de345c4d65",
   "lastOpenFiles": [
     "Pantheon/History.md",
+    "Kingdoms/Skalvaan/index.md",
     "Pantheon/index.md",
     "Kingdoms/Velkara/index.md",
     "Kingdoms/Velkara/History.md",
@@ -195,7 +196,6 @@
     "Kingdoms/Luscalis/index.md",
     "Kingdoms/Marewyn/History.md",
     "Kingdoms/Nyssara/index.md",
-    "Kingdoms/Skalvaan/index.md",
     "Kingdoms/Contested Locations.md",
     "Kingdoms/Defunct.md",
     "Kingdoms/Defunct/Phataniel Empire",
