@@ -1,5 +1,6 @@
 ```mermaid
 graph TD;
-  A[Grandfather] --> B[Father];
-  A --> C[Aunt];
-  B --> D[Me];
+  A[Aionis] --> B[Izelon];
+  A --> C[Nyraxis];
+  A --> D[Thamior];
+  A --> E[Liora]
