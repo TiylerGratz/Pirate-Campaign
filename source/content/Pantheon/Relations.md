@@ -5,7 +5,6 @@ graph TD
   A --> D[Thamior]
   A --> E[Liora]
 
-  subgraph Cluster
-    direction LR
-    B --- F[Fenrix]
-  end
+  B --- F[Fenrix]
+
+  {rank=same; B; F}
