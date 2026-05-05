@@ -5,4 +5,4 @@ graph TD;
   A --> D[Thamior];
   A --> E[Liora]
   B --- F1[+ Fenrix]
-  Fenrix --- F2[Fenrix]
+  F1 --- F2[Fenrix]
