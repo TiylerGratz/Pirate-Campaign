@@ -4,5 +4,5 @@ graph TD;
   A --> C[Nyraxis];
   A --> D[Thamior];
   A --> E[Liora]
-graph LR
+subgraph LR
   B --- F[Fenrix]
