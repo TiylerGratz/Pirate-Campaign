@@ -4,4 +4,5 @@ graph TD;
   A --> C[Nyraxis];
   A --> D[Thamior];
   A --> E[Liora]
-  B --- F[Fenrix]
+  B --- F1[+ Fenrix]
+  Fenrix --- F2[Fenrix]
