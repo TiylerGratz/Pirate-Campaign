@@ -5,7 +5,10 @@ graph TD
   A --> D[Thamior]
   A --> B[Izelon]
 
-  M((⚭))
+  C --> G[Nerion]
+  C --> H[Pelarys]
+
+  M((&lt;3))
 
   B --- M
   F[Fenrix] --- M
