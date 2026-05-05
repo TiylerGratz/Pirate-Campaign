@@ -1,10 +1,13 @@
 ```mermaid
 graph TD
-  A[Aionis] --> B[Izelon]
+  A[Aionis] --> E[Liora]
   A --> C[Nyraxis]
   A --> D[Thamior]
-  A --> E[Liora]
+  A --> B[Izelon]
 
-  B --- F[Fenrix]
+  M((⚭))
 
-  {rank=same; B; F}
+  B --- M
+  F[Fenrix] --- M
+
+  style M fill:#fff,stroke:#333,stroke-width:2px
