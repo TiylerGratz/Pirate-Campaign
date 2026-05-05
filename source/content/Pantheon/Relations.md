@@ -20,5 +20,3 @@ graph TD
 
   B --- M
   F[Fenrix] --- M
-
-  style M fill:#fff,stroke:#333,stroke-width:2px
