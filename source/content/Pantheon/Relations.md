@@ -4,11 +4,19 @@ graph TD
   A --> C[Nyraxis]
   A --> D[Thamior]
   A --> B[Izelon]
+  A --> K[Eryx]
 
   C --> G[Nerion]
   C --> H[Pelarys]
 
-  M((&lt;3))
+  D --> I[Marvos]
+  D --> J[Minara]
+
+  M((❤️))
+  M1((❤️))
+
+  K --- M1
+  L[Thesara] --- M1
 
   B --- M
   F[Fenrix] --- M
