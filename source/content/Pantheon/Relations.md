@@ -12,10 +12,6 @@ graph TD
   D --> I[Marvos]
   D --> J[Minara]
 
-  N[Eshara] --> O[Aureth]
-  N --> P[Ceryn]
-  N --> Q[Phaelon]
-
   M((❤️))
   M1((❤️))
 
@@ -24,3 +20,7 @@ graph TD
 
   B --- M
   F[Fenrix] --- M
+
+  N[Eshara] --> O[Aureth]
+  N --> P[Ceryn]
+  N --> Q[Phaelon]
