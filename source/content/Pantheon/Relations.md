@@ -24,6 +24,9 @@ graph TD
 
   B --- M
   F[Fenrix] --- M
+  M --> R[Myrelon]
+  M --> S[Soryn]
+  M --> T[Morvex]
 
   N --> O[Aureth]
   N --> P[Ceryn]

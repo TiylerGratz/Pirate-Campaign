@@ -29,6 +29,9 @@ Minor
 - Vaeril: God of Stars
 - Nerion: God of Darkness and the Depths
 - Pelarys: Goddess of Marine Life and Balance
+- Myrelon: Goddess of Destiny 
+- Soryn: God of Chance 
+- Morvex: God of Nullity 
 
 Past 
 - Aionis: God of Creation 
