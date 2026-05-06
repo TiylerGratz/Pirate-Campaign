@@ -30,5 +30,5 @@ graph TD
   N --> Q[Phaelon]
   
   
-  click A Pantheon/Gods/Aionis
+  click A "/Pantheon/Gods/Aionis"
 
