@@ -8,7 +8,7 @@ Major (current)
 - Fenrix: God of Luck, Gambling, and Chance
 - Izelon: God of Time, Inevitability, and Destiny
 - Kaelgrim: God of Battle, Honor, and Conquest
-- Liora: Goddess of Light
+- Liora: Goddess of Sun, Light, and Land
 - Maethe: Goddess of Memories, Longing, and Nostalgia
 - Nyraxis: Goddess of the Sea and Moon
 - Thamior: God of Harvest and Life
