@@ -8,6 +8,28 @@ title: Luscalis
 
 **Leader**:  Emperor Aldren Varrow
 
+**Seats of Parliament**:
+- High Theocrat: Head of Religion
+	- Emily Bradley
+- High Arcanist: Head of Arcana
+	- Brannor Veyk
+- Grand Merchant: Head of Trade
+	- Lysandre Kaev Oris
+- High Agronomist: Head of Agriculture
+	- Kaerith Stone
+- High Justicar: Head of Law
+	- Selric Vaem
+- Grand Loremaster: Head of Knowledge
+	- Morrik Dalen
+- Grand Marshal: Head of War
+	- Elira Dax
+- High Ambassador: Head of Foreign Affair
+	- Draxen Valcyr
+- High Commissioner of Development: Head of Infrastructure 
+	- Thalen Brigg
+ - Minister of Innovation: Head of Invention
+	 - Tham Orenth
+
 ### People
 **Population**: 12 million
 

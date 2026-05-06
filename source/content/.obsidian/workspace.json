@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pantheon/Gods/Liora.md",
+                "file": "Kingdoms/Luscalis/History.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Liora"
+              "title": "History"
             }
           },
           {
@@ -225,7 +225,12 @@
   },
   "active": "32107c52e97feea1",
   "lastOpenFiles": [
+    "Kingdoms/Elarion/History.md",
+    "Kingdoms/Luscalis/History.md",
+    "Kingdoms/Luscalis/index.md",
     "Pantheon/index.md",
+    "Kingdoms/Velkara/History.md",
+    "Pantheon/Gods/Arkanis.md",
     "Pantheon/Gods/Liora.md",
     "Pantheon/Relations.md",
     "Pantheon/Gods/Morvex.md",
@@ -247,11 +252,6 @@
     "Pantheon/Gods/Untitled",
     "Pantheon/Gods/Vaeska.md",
     "Pantheon/Gods/Thrixel.md",
-    "Pantheon/Gods/Thamior.md",
-    "Pantheon/Gods/Maethe.md",
-    "Pantheon/Gods/Kaelgrim.md",
-    "Pantheon/History.md",
-    "Pantheon/Gods/Izelon.md",
     "Pantheon/Gods",
     "Organizations",
     "Kingdoms/Defunct/Phataniel Empire",

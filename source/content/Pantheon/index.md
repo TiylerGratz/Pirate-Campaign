@@ -2,6 +2,7 @@
 title: Deities
 ---
 Major (current)
+- Arkanis: God of Arcane Magic and Spellcraft
 - Azzera: Goddess of Passion, Fire, and Lust
 - Eryx: God of Final Judgement and Death 
 - Eshara: Goddess of Storms
