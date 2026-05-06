@@ -28,4 +28,7 @@ graph TD
   N --> O[Aureth]
   N --> P[Ceryn]
   N --> Q[Phaelon]
+  
+  
+  click A Pantheon/Gods/Aionis
 
