@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Kingdoms/Luscalis/History.md",
+                "file": "Pantheon/Gods/Liora.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "History"
+              "title": "Liora"
             }
           },
           {
@@ -225,8 +225,8 @@
   },
   "active": "32107c52e97feea1",
   "lastOpenFiles": [
-    "Kingdoms/Elarion/History.md",
     "Kingdoms/Luscalis/History.md",
+    "Kingdoms/Elarion/History.md",
     "Kingdoms/Luscalis/index.md",
     "Pantheon/index.md",
     "Kingdoms/Velkara/History.md",

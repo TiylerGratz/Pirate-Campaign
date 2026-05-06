@@ -4,7 +4,9 @@
 
 ## Overview
 **Alignment**: Neutral Good 
+
 **Status**: Major Deity
+
 **Titles**: 
 - First Light Bringer 
 - Lady of Light 
