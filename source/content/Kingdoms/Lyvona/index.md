@@ -6,8 +6,6 @@ title: Lyvona
 
 **Capital**: Emvarra
 
-**Leader**: 
-
 ### People
 **Population**: 2.6 million
 

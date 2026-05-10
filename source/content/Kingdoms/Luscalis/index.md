@@ -23,7 +23,7 @@ title: Luscalis
 	- Morrik Dalen
 - Grand Marshal: Head of War
 	- Elira Dax
-- High Ambassador: Head of Foreign Affair
+- High Ambassador: Head of Foreign Affairs
 	- Draxen Valcyr
 - High Commissioner of Development: Head of Infrastructure 
 	- Thalen Brigg
