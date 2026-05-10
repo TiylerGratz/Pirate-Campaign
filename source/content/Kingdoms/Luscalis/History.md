@@ -1,4 +1,4 @@
-### 21 Izelora, 3123 AA: Founding of Luscalis
+### Izelora 21, 3123 AA: Founding of Luscalis
 
 
 ---

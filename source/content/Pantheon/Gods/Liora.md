@@ -1,4 +1,4 @@
-## **Goddess of Sun, Light, and Land**
+### **Goddess of Sun, Light, and Land**
 
 ---
 

@@ -1,1 +1,10 @@
-##### God of Creation
+### God of Creation
+
+---
+
+## Overview
+**Alignment**: Lawful Evil 
+
+**Status**: Dead
+
+**Titles**: 
