@@ -55,8 +55,10 @@
 
 <h3 id="totalCost"></h3>
 
+
 <script>
 $(document).ready(function () {
+
   let table = $('#npcTable').DataTable({
     paging: false,
     info: false
@@ -65,7 +67,7 @@ $(document).ready(function () {
   function calculateTotal() {
     let total = 0;
 
-    table.column(3, { search: 'applied' }).data().each(function (value) {
+    table.column(2, { search: 'applied' }).data().each(function (value) {
       total += Number(value);
     });
 
@@ -77,12 +79,12 @@ $(document).ready(function () {
   table.on('search.dt', function () {
     calculateTotal();
   });
-});
 
-$('#statusFilter').on('change', function () {
-  table.column(5).search(this.value).draw();
-});
+  $('#statusFilter').on('change', function () {
+    table.column(4).search(this.value).draw();
+  });
 
+});
 </script>
 
 </body>
