@@ -92,6 +92,48 @@
     shipFilter.appendChild(opt);
   });
 
+  function renderShipCapacity() {
+  const container = document.getElementById("shipCapacityContainer");
+
+  const ships = {};
+
+  // calculate used capacity (count crew per ship)
+  crew.forEach(c => {
+    if (!ships[c.ship]) {
+      ships[c.ship] = { used: 0, total: 0 };
+    }
+    ships[c.ship].used += 1;
+  });
+
+  // define max capacity (you can edit this)
+  const capacityLimits = {
+    "Nyra": 9,
+    "Orzel": 9,
+    "Nocturn in C": 30
+  };
+
+  let html = "";
+
+  Object.keys(ships).forEach(ship => {
+    const used = ships[ship].used;
+    const max = capacityLimits[ship] || 10;
+    const percent = Math.min(used / max, 1);
+
+    const bars = Math.round(percent * 20);
+    const barDisplay =
+      "█".repeat(bars) + "░".repeat(20 - bars);
+
+    html += `
+      <div style="margin-bottom:10px;">
+        <strong>${ship}</strong><br>
+        <code>${barDisplay}</code> ${used} / ${max}
+      </div>
+    `;
+  });
+
+  container.innerHTML = html;
+}
+
   function render() {
     const shipVal = shipFilter.value;
     const typeVal = typeFilter.value;
@@ -144,6 +186,8 @@
 
     document.getElementById("totalCost").textContent =
       "Total Crew Cost: " + totalCost.toFixed(2);
+
+    renderShipCapacity();
   }
 
   shipFilter.addEventListener("change", render);
