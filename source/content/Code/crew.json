@@ -1,23 +1,33 @@
 [
-  {
-    "name": "Tacht Crest",
-    "type": "Player",
-    "cost": 0,
-    "ship": "Nyra",
-    "status": "Alive"
-  },
-  {
-    "name": "Clove",
-    "type": "NPC",
-    "cost": 0,
-    "ship": "Nyra",
-    "status": "Alive"
-  },
-  {
-    "name": "Riven Veltharis",
-    "type": "NPC",
-    "cost": 0,
-    "ship": "Nyra",
-    "status": "Alive"
-  }
+  { "name": "Tacht Crest", "type": "Player", "cost": 0, "ship": "Nyra", "status": "Alive" },
+  { "name": "Clove", "type": "NPC", "cost": 0, "ship": "Nyra", "status": "Alive" },
+  { "name": "Riven Veltharis", "type": "NPC", "cost": 0, "ship": "Nyra", "status": "Alive" },
+  { "name": "Calypso", "type": "Player", "cost": 0, "ship": "Nyra", "status": "Alive" },
+  { "name": "Syla", "type": "NPC", "cost": 2, "ship": "Nyra", "status": "Alive" },
+  { "name": "Grog", "type": "Player", "cost": 0, "ship": "Nyra", "status": "Alive" },
+
+  { "name": "Kaelyn", "type": "NPC", "cost": 0.8, "ship": "Orzel", "status": "Alive" },
+  { "name": "Joss Vintnari", "type": "Player", "cost": 0, "ship": "Orzel", "status": "Alive" },
+  { "name": "Harrington", "type": "NPC", "cost": 0.5, "ship": "Orzel", "status": "Alive" },
+
+  { "name": "Axelino Troestarios", "type": "Player", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Brock Payne", "type": "Player", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Alfredo Copperworth", "type": "NPC", "cost": 0.4, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Dick Grobin", "type": "NPC", "cost": 0.5, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Horse", "type": "NPC", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Lyraen", "type": "NPC", "cost": 2, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Zedvut Kevall", "type": "Player", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Teremy Twinklenut", "type": "NPC", "cost": 0.2, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Tharnok Vexmoor", "type": "NPC", "cost": 2, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Jason Grobin", "type": "NPC", "cost": 0.5, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Dog", "type": "NPC", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Nightwing", "type": "NPC", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Edric", "type": "NPC", "cost": 0.2, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Ace Hardass", "type": "NPC", "cost": 2, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Selby", "type": "NPC", "cost": 0.1, "ship": "Nocturn in C", "status": "Dead" },
+  { "name": "John", "type": "NPC", "cost": 2, "ship": "Nocturn in C", "status": "Dead" },
+  { "name": "Eda", "type": "NPC", "cost": 0.5, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Orrick", "type": "NPC", "cost": 0.3, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Little Brock", "type": "NPC", "cost": 0, "ship": "Nocturn in C", "status": "Alive" },
+  { "name": "Evie", "type": "NPC", "cost": 0.2, "ship": "Nocturn in C", "status": "Alive" }
 ]
