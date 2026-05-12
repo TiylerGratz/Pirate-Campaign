@@ -131,7 +131,9 @@
 
       row.style.display = visible ? "" : "none";
 
-      if (visible) total += cost;
+      if (status === "Alive") {
+        total += cost;
+      }
     });
 
     totalEl.textContent = "Total Cost: " + total;
