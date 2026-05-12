@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "a37331f27f08f04c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Session Notes.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Session Notes"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,12 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d160f9de345c4d65",
+  "active": "a37331f27f08f04c",
   "lastOpenFiles": [
+    "Races/index.md",
+    "Session Notes.md",
     "Planes of Existence/Shadowfell.md",
     "Planes of Existence/Fey Wild.md",
     "Planes of Existence/index.md",
-    "Races/index.md",
     "Planes of Existence",
     "Pantheon/index.md",
     "Pantheon/Gods/Azzera.md",
@@ -209,7 +225,6 @@
     "Kingdoms/Defunct/Phataniel Empire/index.md",
     "index.md",
     "Pantheon/Gods/Phaelon.md",
-    "Pantheon/Gods/Thesara.md",
     "Pantheon/Gods",
     "Organizations",
     "Kingdoms/Defunct/Phataniel Empire",
