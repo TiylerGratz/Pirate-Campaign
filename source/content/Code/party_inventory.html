@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Party Treasury</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      max-width: 500px;
+    }
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      font-size: 18px;
+    }
+
+    .box {
+      padding: 10px;
+      background: #f3f3f3;
+      border-radius: 8px;
+    }
+
+    .label {
+      font-size: 12px;
+      color: #555;
+    }
+
+    .value {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="title">Party Treasury</div>
+  <div id="currencyGrid">Loading...</div>
+</div>
+
+<script>
+
+const SHEET_URL =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTdYvICnGJf8s5tKHGaikcSXqvLF4qAryIXI9EZ9rJpqT6kHy1LIp6daVNlT7-9DxWH5RSCjRQHcMs8/pub?output=csv";
+
+function parseCurrency(csvText) {
+  const lines = csvText.trim().split("\n");
+  const headers = lines[0].split(",");
+  const values = lines[1].split(",");
+
+  let obj = {};
+  headers.forEach((h, i) => {
+    obj[h.trim()] = Number(values[i]);
+  });
+
+  return obj;
+}
+
+async function loadCurrency() {
+  const res = await fetch(SHEET_URL + "&t=" + Date.now(), {
+    cache: "no-store"
+  });
+
+  const text = await res.text();
+  return parseCurrency(text);
+}
+
+function renderCurrency(c) {
+  document.getElementById("currencyGrid").innerHTML = `
+    <div class="grid">
+      <div class="box"><div class="label">PP</div><div class="value">${c.PP}</div></div>
+      <div class="box"><div class="label">GP</div><div class="value">${c.GP}</div></div>
+      <div class="box"><div class="label">EP</div><div class="value">${c.EP}</div></div>
+      <div class="box"><div class="label">SP</div><div class="value">${c.SP}</div></div>
+      <div class="box"><div class="label">CP</div><div class="value">${c.CP}</div></div>
+    </div>
+  `;
+}
+
+async function init() {
+  const currency = await loadCurrency();
+  renderCurrency(currency);
+}
+
+init();
+
+</script>
+
+</body>
+</html>
