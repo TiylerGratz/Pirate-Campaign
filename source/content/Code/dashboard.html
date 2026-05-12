@@ -5,26 +5,71 @@
   <title>Crew Dashboard</title>
 
   <style>
-    body { font-family: Arial; padding: 20px; }
-    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
-    th, td { border: 1px solid #ccc; padding: 8px; }
-    th { background: #eee; }
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    .top-bar {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      padding: 10px;
+      background: #f3f3f3;
+      border-radius: 6px;
+    }
+
+    .controls {
+      margin-bottom: 15px;
+    }
+
+    select, input {
+      padding: 6px;
+      margin-right: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+
+    th {
+      background: #eee;
+      cursor: pointer;
+    }
   </style>
 </head>
 
 <body>
 
-<h1>Crew Members</h1>
+<div class="top-bar" id="totalCost">
+  Total Crew Cost: 0
+</div>
 
-<select id="statusFilter">
-  <option value="">All</option>
-  <option value="Alive">Alive</option>
-  <option value="Dead">Dead</option>
-</select>
+<div class="controls">
+  <select id="shipFilter">
+    <option value="">All Ships</option>
+  </select>
+
+  <select id="typeFilter">
+    <option value="">All Types</option>
+    <option value="Player">Player</option>
+    <option value="NPC">NPC</option>
+  </select>
+
+  <select id="statusFilter">
+    <option value="">All Status</option>
+    <option value="Alive">Alive</option>
+    <option value="Dead">Dead</option>
+  </select>
+</div>
 
 <div id="tableContainer"></div>
-
-<h3 id="totalCost"></h3>
 
 <script>
 (async function () {
@@ -34,16 +79,38 @@
 
   const container = document.getElementById("tableContainer");
 
-  let statusFilter = document.getElementById("statusFilter");
+  const shipFilter = document.getElementById("shipFilter");
+  const typeFilter = document.getElementById("typeFilter");
+  const statusFilter = document.getElementById("statusFilter");
+
+
+  const ships = [...new Set(crew.map(c => c.ship))];
+  ships.forEach(ship => {
+    let opt = document.createElement("option");
+    opt.value = ship;
+    opt.textContent = ship;
+    shipFilter.appendChild(opt);
+  });
 
   function render() {
-    let filter = statusFilter.value;
+    const shipVal = shipFilter.value;
+    const typeVal = typeFilter.value;
+    const statusVal = statusFilter.value;
+
+    let totalCost = 0;
 
     let filtered = crew.filter(c =>
-      !filter || c.status === filter
+      (!shipVal || c.ship === shipVal) &&
+      (!typeVal || c.type === typeVal) &&
+      (!statusVal || c.status === statusVal)
     );
 
-    let totalAlive = 0;
+
+    crew.forEach(c => {
+      if (c.status === "Alive") {
+        totalCost += c.cost;
+      }
+    });
 
     let html = `
       <table>
@@ -60,10 +127,6 @@
     `;
 
     filtered.forEach(c => {
-      if (c.status === "Alive") {
-        totalAlive += c.cost;
-      }
-
       html += `
         <tr>
           <td>${c.name}</td>
@@ -80,9 +143,11 @@
     container.innerHTML = html;
 
     document.getElementById("totalCost").textContent =
-      "Total Alive Cost: " + totalAlive;
+      "Total Crew Cost: " + totalCost.toFixed(2);
   }
 
+  shipFilter.addEventListener("change", render);
+  typeFilter.addEventListener("change", render);
   statusFilter.addEventListener("change", render);
 
   render();
