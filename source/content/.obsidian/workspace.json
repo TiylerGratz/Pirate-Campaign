@@ -223,20 +223,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "176208f627559a28",
+  "active": "8d92f017666de7ea",
   "lastOpenFiles": [
+    "Races/index.md",
+    "index.md",
+    "Pirate Crew.md",
     "Code/crew.json",
     "Code/New Text Document.txt",
     "Session Notes.md",
     "Calendar.md",
-    "Pirate Crew.md",
     "Code/dashboard.html.md",
     "Code/dashboard.html",
     "Code",
-    "index.md",
     "Images/Map.jpg",
     "Images",
-    "Races/index.md",
     "Planes of Existence/Shadowfell.md",
     "Planes of Existence/Fey Wild.md",
     "Planes of Existence/index.md",
@@ -260,7 +260,6 @@
     "Kingdoms/Luscalis/History.md",
     "Pantheon/Gods",
     "Organizations",
-    "Kingdoms/Defunct/Phataniel Empire",
-    "Kingdoms/Defunct"
+    "Kingdoms/Defunct/Phataniel Empire"
   ]
 }
