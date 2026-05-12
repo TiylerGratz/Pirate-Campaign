@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calendar.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Calendar"
+              "title": "index"
             }
           }
         ],
@@ -211,8 +211,11 @@
   },
   "active": "525f43eccafaaca7",
   "lastOpenFiles": [
-    "Session Notes.md",
+    "Images/Map.jpg",
     "Calendar.md",
+    "index.md",
+    "Images",
+    "Session Notes.md",
     "Races/index.md",
     "Planes of Existence/Shadowfell.md",
     "Planes of Existence/Fey Wild.md",
@@ -237,15 +240,12 @@
     "Kingdoms/Luscalis/History.md",
     "Kingdoms/Elarion/History.md",
     "Kingdoms/Drakmyr/History.md",
-    "Kingdoms/Defunct/Phataniel Empire/index.md",
-    "index.md",
     "Pantheon/Gods",
     "Organizations",
     "Kingdoms/Defunct/Phataniel Empire",
     "Kingdoms/Defunct",
     "Untitled.base",
     "Elarion",
-    "Kingdoms",
-    "category-folder"
+    "Kingdoms"
   ]
 }
