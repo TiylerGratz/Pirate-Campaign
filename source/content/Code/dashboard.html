@@ -162,8 +162,10 @@
   function renderShipCharts() {
     chartsContainer.innerHTML = "";
 
+    const aliveCrew = crew.filter(c => c.status === "Alive");
+
     const shipCounts = {};
-    crew.forEach(c => {
+    aliveCrew.forEach(c => {
       shipCounts[c.ship] = (shipCounts[c.ship] || 0) + 1;
     });
 
