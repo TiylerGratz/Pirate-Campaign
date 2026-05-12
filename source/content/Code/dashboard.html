@@ -32,10 +32,11 @@
     }
 
     #chartsContainer {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      display: flex;
+      flex-wrap: nowrap;
       gap: 16px;
-      margin-bottom: 20px;
+      overflow-x: auto;
+      padding-bottom: 10px;
     }
 
     .shipCard {
@@ -46,6 +47,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-width: 260px;
+      flex: 0 0 auto;
     }
 
     .shipHeader {
@@ -118,8 +121,11 @@
 <script>
 (async function () {
 
-  const res = await fetch('./crew.json');
-  const crew = await res.json();
+  const crewRes = await fetch('./crew.json');
+  const crew = await crewRes.json();
+
+  const shipRes = await fetch('./ships.json');
+  const shipsData = await shipRes.json();
 
   const tableContainer = document.getElementById("tableContainer");
   const chartsContainer = document.getElementById("chartsContainer");
@@ -128,17 +134,10 @@
   const typeFilter = document.getElementById("typeFilter");
   const statusFilter = document.getElementById("statusFilter");
 
-  const shipMeta = {
-    "Nyra": { type: "Sloop", hp: "33/33" },
-    "Orzel": { type: "Sloop", hp: "27/33" },
-    "Nocturn in C": { type: "Brigantine", hp: "52/52" }
-  };
-
-  const ships = [...new Set(crew.map(c => c.ship))];
-  ships.forEach(ship => {
+  shipsData.forEach(ship => {
     const opt = document.createElement("option");
-    opt.value = ship;
-    opt.textContent = ship;
+    opt.value = ship.name;
+    opt.textContent = ship.name;
     shipFilter.appendChild(opt);
   });
 
@@ -150,29 +149,21 @@
       shipCounts[c.ship] = (shipCounts[c.ship] || 0) + 1;
     });
 
-    const capacityLimits = {
-      "Nyra": 9,
-      "Orzel": 9,
-      "Nocturn in C": 30
-    };
+    shipsData.forEach((ship, i) => {
 
-    Object.keys(shipCounts).forEach((ship, i) => {
-
-      const used = shipCounts[ship];
-      const max = capacityLimits[ship] || 10;
+      const used = shipCounts[ship.name] || 0;
+      const max = ship.capacity;
       const free = Math.max(max - used, 0);
 
       const canvasId = `chart_${i}`;
-
-      const meta = shipMeta[ship] || { type: "Unknown", hp: "?" };
 
       const card = document.createElement("div");
       card.className = "shipCard";
 
       card.innerHTML = `
         <div class="shipHeader">
-          <div class="shipTitle">${ship}</div>
-          <div class="shipMeta">${meta.type} • HP: ${meta.hp}</div>
+          <div class="shipTitle">${ship.name}</div>
+          <div class="shipMeta">${ship.type} • HP: ${ship.hp}</div>
         </div>
         <canvas id="${canvasId}" width="180" height="180"></canvas>
         <div>${used} / ${max} crew</div>
@@ -243,7 +234,7 @@
     tableContainer.innerHTML = html;
 
     document.getElementById("totalCost").textContent =
-      "Total Crew Cost: " + totalCost.toFixed(2) + " GP/Day";
+      "Total Crew Cost: " + totalCost.toFixed(2) + " GP/day";
 
     renderShipCharts();
   }

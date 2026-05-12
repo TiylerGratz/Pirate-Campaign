@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nyra",
+    "type": "Sloop",
+    "hp": "33/33",
+    "capacity": 9
+  },
+  {
+    "name": "Orzel",
+    "type": "Sloop",
+    "hp": "27/33",
+    "capacity": 9
+  },
+  {
+    "name": "Nocturn in C",
+    "type": "Brigantine",
+    "hp": "52/52",
+    "capacity": 30
+  }
+]
