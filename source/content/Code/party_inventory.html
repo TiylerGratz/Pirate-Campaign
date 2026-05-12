@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Party Inventory</title>
+  <title>Party Dashboard</title>
 
   <style>
     body {
@@ -84,12 +84,13 @@ function splitTables(csv) {
     const row = lines[i];
 
     if (row[0] === "PP") {
+      const values = lines[i + 1];
       currency = {
-        PP: Number(row[0]),
-        GP: Number(row[1]),
-        EP: Number(row[2]),
-        SP: Number(row[3]),
-        CP: Number(row[4])
+        PP: Number(values[0]),
+        GP: Number(values[1]),
+        EP: Number(values[2]),
+        SP: Number(values[3]),
+        CP: Number(values[4])
       };
     }
 
