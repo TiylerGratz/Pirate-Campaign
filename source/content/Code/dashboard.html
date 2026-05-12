@@ -15,7 +15,7 @@
     .top-bar {
       font-size: 20px;
       font-weight: bold;
-      margin-bottom: 15px;
+      margin: 15px 0;
       padding: 12px;
       background: #ffffff;
       border-radius: 10px;
@@ -31,12 +31,19 @@
       margin-right: 10px;
     }
 
+    #chartsSectionTitle {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
     #chartsContainer {
       display: flex;
       flex-wrap: nowrap;
       gap: 16px;
       overflow-x: auto;
       padding-bottom: 10px;
+      margin-bottom: 10px;
     }
 
     .shipCard {
@@ -72,6 +79,16 @@
       margin: 10px 0;
     }
 
+    #totalCost {
+      font-size: 20px;
+      font-weight: bold;
+      padding: 12px;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin: 10px 0 15px 0;
+    }
+
     table {
       border-collapse: collapse;
       width: 100%;
@@ -94,8 +111,7 @@
 
 <body>
 
-<div class="top-bar" id="totalCost"></div>
-
+<div id="chartsSectionTitle">Ships</div>
 <div id="chartsContainer"></div>
 
 <div class="controls">
@@ -115,6 +131,8 @@
     <option value="Dead">Dead</option>
   </select>
 </div>
+
+<div id="totalCost"></div>
 
 <div id="tableContainer"></div>
 
