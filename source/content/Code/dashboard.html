@@ -1,46 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8">
-  <title>NPC Crew Dashboard</title>
+  <title>Crew Dashboard</title>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-      margin-top: 10px;
-    }
-
-    th, td {
-      border: 1px solid #ccc;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background: #f2f2f2;
-      cursor: pointer;
-    }
-
-    select, input {
-      padding: 6px;
-      margin-right: 10px;
-    }
-
-    .controls {
-      margin-bottom: 10px;
-    }
-
-    #totalCost {
-      margin-top: 15px;
-      font-size: 18px;
-      font-weight: bold;
-    }
+    body { font-family: Arial; padding: 20px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    th { background: #eee; }
   </style>
 </head>
 
@@ -48,102 +16,76 @@
 
 <h1>Crew Members</h1>
 
-<div class="controls">
-  <select id="statusFilter">
-    <option value="">All Status</option>
-    <option value="Alive">Alive</option>
-    <option value="Dead">Dead</option>
-  </select>
+<select id="statusFilter">
+  <option value="">All</option>
+  <option value="Alive">Alive</option>
+  <option value="Dead">Dead</option>
+</select>
 
-  <select id="shipFilter">
-    <option value="">All Ships</option>
-    <option value="Nyra">Nyra</option>
-  </select>
+<div id="tableContainer"></div>
 
-  <input id="searchBox" placeholder="Search name/type..." />
-</div>
-
-<table id="npcTable">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Cost</th>
-      <th>Ship</th>
-      <th>Status</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <tr>
-      <td>Tacht Crest</td>
-      <td>Player</td>
-      <td>0</td>
-      <td>Nyra</td>
-      <td>Alive</td>
-    </tr>
-    <tr>
-      <td>Clove</td>
-      <td>NPC</td>
-      <td>0</td>
-      <td>Nyra</td>
-      <td>Alive</td>
-    </tr>
-    <tr>
-      <td>Rell</td>
-      <td>NPC</td>
-      <td>25</td>
-      <td>Nyra</td>
-      <td>Dead</td>
-    </tr>
-  </tbody>
-</table>
-
-<div id="totalCost"></div>
+<h3 id="totalCost"></h3>
 
 <script>
-(function () {
+(async function () {
 
-  const statusFilter = document.getElementById("statusFilter");
-  const shipFilter = document.getElementById("shipFilter");
-  const searchBox = document.getElementById("searchBox");
-  const rows = Array.from(document.querySelectorAll("#npcTable tbody tr"));
-  const totalEl = document.getElementById("totalCost");
+  const res = await fetch('./crew.json');
+  const crew = await res.json();
 
-  function update() {
-    let total = 0;
+  const container = document.getElementById("tableContainer");
 
-    const statusVal = statusFilter.value;
-    const shipVal = shipFilter.value;
-    const searchVal = searchBox.value.toLowerCase();
+  let statusFilter = document.getElementById("statusFilter");
 
-    rows.forEach(row => {
-      const name = row.children[0].textContent.toLowerCase();
-      const type = row.children[1].textContent.toLowerCase();
-      const cost = Number(row.children[2].textContent);
-      const ship = row.children[3].textContent;
-      const status = row.children[4].textContent;
+  function render() {
+    let filter = statusFilter.value;
 
-      let visible =
-        (!statusVal || status === statusVal) &&
-        (!shipVal || ship === shipVal) &&
-        (!searchVal || name.includes(searchVal) || type.includes(searchVal));
+    let filtered = crew.filter(c =>
+      !filter || c.status === filter
+    );
 
-      row.style.display = visible ? "" : "none";
+    let totalAlive = 0;
 
-      if (status === "Alive") {
-        total += cost;
+    let html = `
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Cost</th>
+            <th>Ship</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+    `;
+
+    filtered.forEach(c => {
+      if (c.status === "Alive") {
+        totalAlive += c.cost;
       }
+
+      html += `
+        <tr>
+          <td>${c.name}</td>
+          <td>${c.type}</td>
+          <td>${c.cost}</td>
+          <td>${c.ship}</td>
+          <td>${c.status}</td>
+        </tr>
+      `;
     });
 
-    totalEl.textContent = "Total Cost: " + total;
+    html += "</tbody></table>";
+
+    container.innerHTML = html;
+
+    document.getElementById("totalCost").textContent =
+      "Total Alive Cost: " + totalAlive;
   }
 
-  statusFilter.addEventListener("change", update);
-  shipFilter.addEventListener("change", update);
-  searchBox.addEventListener("input", update);
+  statusFilter.addEventListener("change", render);
 
-  update();
+  render();
 
 })();
 </script>

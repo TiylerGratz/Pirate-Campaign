@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Tacht Crest",
+    "type": "Player",
+    "cost": 0,
+    "ship": "Nyra",
+    "status": "Alive"
+  },
+  {
+    "name": "Clove",
+    "type": "NPC",
+    "cost": 0,
+    "ship": "Nyra",
+    "status": "Alive"
+  },
+  {
+    "name": "Riven Veltharis",
+    "type": "NPC",
+    "cost": 0,
+    "ship": "Nyra",
+    "status": "Alive"
+  }
+]

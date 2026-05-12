@@ -223,8 +223,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8d92f017666de7ea",
+  "active": "176208f627559a28",
   "lastOpenFiles": [
+    "Code/crew.json",
+    "Code/New Text Document.txt",
     "Session Notes.md",
     "Calendar.md",
     "Pirate Crew.md",
@@ -259,7 +261,6 @@
     "Pantheon/Gods",
     "Organizations",
     "Kingdoms/Defunct/Phataniel Empire",
-    "Kingdoms/Defunct",
-    "Untitled.base"
+    "Kingdoms/Defunct"
   ]
 }
