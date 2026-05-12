@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Party Treasury</title>
+  <title>Party Inventory</title>
 
   <style>
     body {
@@ -16,7 +16,8 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      max-width: 500px;
+      max-width: 900px;
+      margin-bottom: 20px;
     }
 
     .title {
@@ -27,7 +28,7 @@
 
     .grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(5, 1fr);
       gap: 10px;
       font-size: 18px;
     }
@@ -36,16 +37,22 @@
       padding: 10px;
       background: #f3f3f3;
       border-radius: 8px;
+      text-align: center;
     }
 
-    .label {
-      font-size: 12px;
-      color: #555;
+    table {
+      width: 100%;
+      border-collapse: collapse;
     }
 
-    .value {
-      font-size: 18px;
-      font-weight: bold;
+    th, td {
+      border: 1px solid #eee;
+      padding: 8px;
+      text-align: left;
+    }
+
+    th {
+      background: #f2f2f2;
     }
   </style>
 </head>
@@ -53,8 +60,13 @@
 <body>
 
 <div class="card">
-  <div class="title">Party Treasury</div>
+  <div class="title">Currency</div>
   <div id="currencyGrid">Loading...</div>
+</div>
+
+<div class="card">
+  <div class="title">Items</div>
+  <div id="itemsGrid">Loading...</div>
 </div>
 
 <script>
@@ -62,43 +74,102 @@
 const SHEET_URL =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vTdYvICnGJf8s5tKHGaikcSXqvLF4qAryIXI9EZ9rJpqT6kHy1LIp6daVNlT7-9DxWH5RSCjRQHcMs8/pub?output=csv";
 
-function parseCurrency(csvText) {
-  const lines = csvText.trim().split("\n");
-  const headers = lines[0].split(",");
-  const values = lines[1].split(",");
+function splitTables(csv) {
+  const lines = csv.trim().split("\n").map(l => l.split(","));
 
-  let obj = {};
-  headers.forEach((h, i) => {
-    obj[h.trim()] = Number(values[i]);
-  });
+  let currency = null;
+  let items = [];
 
-  return obj;
+  for (let i = 0; i < lines.length; i++) {
+    const row = lines[i];
+
+    if (row[0] === "PP") {
+      currency = {
+        PP: Number(row[0]),
+        GP: Number(row[1]),
+        EP: Number(row[2]),
+        SP: Number(row[3]),
+        CP: Number(row[4])
+      };
+    }
+
+    if (row[0] === "Name") {
+      for (let j = i + 1; j < lines.length; j++) {
+        const r = lines[j];
+        if (!r[0]) continue;
+
+        items.push({
+          name: r[0],
+          amount: r[1],
+          cost: r[2],
+          link: r[3],
+          notes: r[4]
+        });
+      }
+      break;
+    }
+  }
+
+  return { currency, items };
 }
 
-async function loadCurrency() {
+async function loadData() {
   const res = await fetch(SHEET_URL + "&t=" + Date.now(), {
     cache: "no-store"
   });
 
   const text = await res.text();
-  return parseCurrency(text);
+  return splitTables(text);
 }
 
 function renderCurrency(c) {
   document.getElementById("currencyGrid").innerHTML = `
     <div class="grid">
-      <div class="box"><div class="label">PP</div><div class="value">${c.PP}</div></div>
-      <div class="box"><div class="label">GP</div><div class="value">${c.GP}</div></div>
-      <div class="box"><div class="label">EP</div><div class="value">${c.EP}</div></div>
-      <div class="box"><div class="label">SP</div><div class="value">${c.SP}</div></div>
-      <div class="box"><div class="label">CP</div><div class="value">${c.CP}</div></div>
+      <div class="box"><b>PP</b><br>${c.PP}</div>
+      <div class="box"><b>GP</b><br>${c.GP}</div>
+      <div class="box"><b>EP</b><br>${c.EP}</div>
+      <div class="box"><b>SP</b><br>${c.SP}</div>
+      <div class="box"><b>CP</b><br>${c.CP}</div>
     </div>
   `;
 }
 
+function renderItems(items) {
+  let html = `
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Amount</th>
+          <th>Cost</th>
+          <th>Link</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  items.forEach(i => {
+    html += `
+      <tr>
+        <td>${i.name}</td>
+        <td>${i.amount}</td>
+        <td>${i.cost}</td>
+        <td>${i.link}</td>
+        <td>${i.notes}</td>
+      </tr>
+    `;
+  });
+
+  html += "</tbody></table>";
+
+  document.getElementById("itemsGrid").innerHTML = html;
+}
+
 async function init() {
-  const currency = await loadCurrency();
-  renderCurrency(currency);
+  const data = await loadData();
+  renderCurrency(data.currency);
+  renderItems(data.items);
 }
 
 init();
