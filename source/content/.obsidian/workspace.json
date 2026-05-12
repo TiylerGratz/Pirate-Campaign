@@ -225,8 +225,11 @@
   },
   "active": "8d92f017666de7ea",
   "lastOpenFiles": [
-    "index.md",
+    "Code/dashboard.html.md",
+    "Code/dashboard.html",
     "Pirate Crew.md",
+    "Code",
+    "index.md",
     "Images/Map.jpg",
     "Calendar.md",
     "Images",
@@ -253,14 +256,10 @@
     "Kingdoms/Marewyn/index.md",
     "Kingdoms/Lyvona/index.md",
     "Kingdoms/Luscalis/History.md",
-    "Kingdoms/Elarion/History.md",
-    "Kingdoms/Drakmyr/History.md",
     "Pantheon/Gods",
     "Organizations",
     "Kingdoms/Defunct/Phataniel Empire",
     "Kingdoms/Defunct",
-    "Untitled.base",
-    "Elarion",
-    "Kingdoms"
+    "Untitled.base"
   ]
 }
