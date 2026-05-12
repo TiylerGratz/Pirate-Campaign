@@ -31,6 +31,7 @@
     table {
       border-collapse: collapse;
       width: 100%;
+      margin-top: 10px;
     }
 
     th, td {
@@ -40,7 +41,14 @@
 
     th {
       background: #eee;
-      cursor: pointer;
+    }
+
+    #shipCapacityContainer {
+      margin-bottom: 20px;
+    }
+
+    code {
+      font-family: monospace;
     }
   </style>
 </head>
@@ -50,6 +58,9 @@
 <div class="top-bar" id="totalCost">
   Total Crew Cost: 0
 </div>
+
+<h2>Ship Capacity</h2>
+<div id="shipCapacityContainer"></div>
 
 <div class="controls">
   <select id="shipFilter">
@@ -69,6 +80,7 @@
   </select>
 </div>
 
+
 <div id="tableContainer"></div>
 
 <script>
@@ -77,7 +89,8 @@
   const res = await fetch('./crew.json');
   const crew = await res.json();
 
-  const container = document.getElementById("tableContainer");
+  const tableContainer = document.getElementById("tableContainer");
+  const shipContainer = document.getElementById("shipCapacityContainer");
 
   const shipFilter = document.getElementById("shipFilter");
   const typeFilter = document.getElementById("typeFilter");
@@ -86,60 +99,53 @@
 
   const ships = [...new Set(crew.map(c => c.ship))];
   ships.forEach(ship => {
-    let opt = document.createElement("option");
+    const opt = document.createElement("option");
     opt.value = ship;
     opt.textContent = ship;
     shipFilter.appendChild(opt);
   });
 
+
   function renderShipCapacity() {
-  const container = document.getElementById("shipCapacityContainer");
+    const shipCounts = {};
 
-  const ships = {};
+    crew.forEach(c => {
+      shipCounts[c.ship] = (shipCounts[c.ship] || 0) + 1;
+    });
 
-  // calculate used capacity (count crew per ship)
-  crew.forEach(c => {
-    if (!ships[c.ship]) {
-      ships[c.ship] = { used: 0, total: 0 };
-    }
-    ships[c.ship].used += 1;
-  });
+    const capacityLimits = {
+      "Nyra": 9,
+      "Orzel": 9,
+      "Nocturn in C": 30
+    };
 
-  // define max capacity (you can edit this)
-  const capacityLimits = {
-    "Nyra": 9,
-    "Orzel": 9,
-    "Nocturn in C": 30
-  };
+    let html = "";
 
-  let html = "";
+    Object.keys(shipCounts).forEach(ship => {
+      const used = shipCounts[ship];
+      const max = capacityLimits[ship] || 10;
 
-  Object.keys(ships).forEach(ship => {
-    const used = ships[ship].used;
-    const max = capacityLimits[ship] || 10;
-    const percent = Math.min(used / max, 1);
+      const percent = used / max;
+      const bars = Math.round(percent * 20);
 
-    const bars = Math.round(percent * 20);
-    const barDisplay =
-      "█".repeat(bars) + "░".repeat(20 - bars);
+      const bar = "█".repeat(bars) + "░".repeat(20 - bars);
 
-    html += `
-      <div style="margin-bottom:10px;">
-        <strong>${ship}</strong><br>
-        <code>${barDisplay}</code> ${used} / ${max}
-      </div>
-    `;
-  });
+      html += `
+        <div style="margin-bottom:10px;">
+          <strong>${ship}</strong><br>
+          <code>${bar}</code> ${used} / ${max}
+        </div>
+      `;
+    });
 
-  container.innerHTML = html;
-}
+    shipContainer.innerHTML = html;
+  }
 
   function render() {
+
     const shipVal = shipFilter.value;
     const typeVal = typeFilter.value;
     const statusVal = statusFilter.value;
-
-    let totalCost = 0;
 
     let filtered = crew.filter(c =>
       (!shipVal || c.ship === shipVal) &&
@@ -147,7 +153,7 @@
       (!statusVal || c.status === statusVal)
     );
 
-
+    let totalCost = 0;
     crew.forEach(c => {
       if (c.status === "Alive") {
         totalCost += c.cost;
@@ -182,13 +188,14 @@
 
     html += "</tbody></table>";
 
-    container.innerHTML = html;
+    tableContainer.innerHTML = html;
 
     document.getElementById("totalCost").textContent =
       "Total Crew Cost: " + totalCost.toFixed(2) + " GP/Day";
 
     renderShipCapacity();
   }
+
 
   shipFilter.addEventListener("change", render);
   typeFilter.addEventListener("change", render);
