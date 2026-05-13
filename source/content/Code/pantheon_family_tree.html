@@ -1,184 +1,132 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Pantheon Family Tree</title>
+<meta charset="utf-8">
+<title>Pantheon Family Tree</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/treant-js@1.0/Treant.css">
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/treant-js@1.0/Treant.min.js"></script>
+svg {
+  width: 100vw;
+  height: 100vh;
+}
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fafafa;
-      padding: 20px;
-      margin: 0;
-    }
+.node {
+  fill: white;
+  stroke: #333;
+  stroke-width: 1.2px;
+}
 
-    #tree {
-      width: 100%;
-      height: 1600px;
-      overflow: auto;
-    }
+.text {
+  font-size: 13px;
+  font-weight: bold;
+  text-anchor: middle;
+}
 
-    .Treant .node {
-      border: 1px solid #d8d8d8;
-      border-radius: 10px;
-      padding: 10px 14px;
-      background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      text-align: center;
-      min-width: 120px;
-    }
-
-    .Treant .node a {
-      text-decoration: none;
-      color: #222;
-      font-weight: bold;
-    }
-
-    .couple {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .partner {
-      border: 1px solid #d8d8d8;
-      border-radius: 10px;
-      padding: 10px 14px;
-      background: white;
-      min-width: 120px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-  </style>
+.link {
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+</style>
 </head>
 
 <body>
 
-<div id="tree"></div>
+<svg id="tree"></svg>
 
 <script>
 
-function single(name, link) {
-  return {
-    HTMLclass: "node",
-    innerHTML: `
-      <a href="${link}">${name}</a>
-    `
-  };
+const svg = document.getElementById("tree");
+
+const nodes = [
+  { id: "Aionis", x: 400, y: 80 },
+
+  { id: "Izelon", x: 200, y: 220 },
+  { id: "Eryx", x: 400, y: 220 },
+  { id: "Nyraxis", x: 600, y: 220 },
+  { id: "Thamior", x: 800, y: 220 },
+
+  { id: "Myrelon", x: 200, y: 360 },
+  { id: "Soryn", x: 260, y: 360 },
+  { id: "Morvex", x: 320, y: 360 },
+
+  { id: "Eshara", x: 520, y: 360 },
+  { id: "Aureth", x: 480, y: 500 },
+  { id: "Ceryn", x: 560, y: 500 },
+  { id: "Phaelon", x: 640, y: 500 },
+
+  { id: "Nerion", x: 560, y: 360 },
+  { id: "Pelarys", x: 640, y: 360 },
+
+  { id: "Marvos", x: 780, y: 360 },
+  { id: "Minara", x: 840, y: 360 }
+];
+
+const links = [
+  ["Aionis", "Izelon"],
+  ["Aionis", "Eryx"],
+  ["Aionis", "Nyraxis"],
+  ["Aionis", "Thamior"],
+
+  ["Izelon", "Myrelon"],
+  ["Izelon", "Soryn"],
+  ["Izelon", "Morvex"],
+
+  ["Nyraxis", "Nerion"],
+  ["Nyraxis", "Pelarys"],
+
+  ["Thamior", "Marvos"],
+  ["Thamior", "Minara"],
+
+  ["Eryx", "Eshara"],
+  ["Eshara", "Aureth"],
+  ["Eshara", "Ceryn"],
+  ["Eshara", "Phaelon"]
+];
+
+function drawLine(x1, y1, x2, y2) {
+  const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  line.setAttribute("x1", x1);
+  line.setAttribute("y1", y1);
+  line.setAttribute("x2", x2);
+  line.setAttribute("y2", y2);
+  line.setAttribute("class", "link");
+  svg.appendChild(line);
 }
 
-function couple(name1, link1, name2, link2) {
-  return {
-    HTMLclass: "node",
-    innerHTML: `
-      <div class="couple">
-        <div class="partner">
-          <a href="${link1}">${name1}</a>
-        </div>
+function drawNode(n) {
+  const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
 
-        <div class="partner">
-          <a href="${link2}">${name2}</a>
-        </div>
-      </div>
-    `
-  };
+  const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  circle.setAttribute("cx", n.x);
+  circle.setAttribute("cy", n.y);
+  circle.setAttribute("r", 28);
+  circle.setAttribute("class", "node");
+
+  const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  text.setAttribute("x", n.x);
+  text.setAttribute("y", n.y + 5);
+  text.setAttribute("class", "text");
+  text.textContent = n.id;
+
+  g.appendChild(circle);
+  g.appendChild(text);
+  svg.appendChild(g);
 }
 
-const tree = {
-  chart: {
-    container: "#tree",
-    rootOrientation: "NORTH",
-    levelSeparation: 60,
-    siblingSeparation: 40,
-    subTeeSeparation: 40,
-    connectors: {
-      type: "step"
-    },
-    nodeAlign: "BOTTOM"
-  },
+nodes.forEach(drawNode);
 
-  nodeStructure: {
-    ...couple(
-      "Aionis",
-      "/Pirate-Campaign/Pantheon/Gods/Aionis",
-      "Liora",
-      "/Pirate-Campaign/Pantheon/Gods/Liora"
-    ),
-
-    children: [
-
-      {
-        ...single(
-          "Nyraxis",
-          "/Pirate-Campaign/Pantheon/Gods/Nyraxis"
-        ),
-
-        children: [
-          single("Nerion", "/Pirate-Campaign/Pantheon/Gods/Nerion"),
-          single("Pelarys", "/Pirate-Campaign/Pantheon/Gods/Pelarys")
-        ]
-      },
-
-      {
-        ...single(
-          "Thamior",
-          "/Pirate-Campaign/Pantheon/Gods/Thamior"
-        ),
-
-        children: [
-          single("Marvos", "/Pirate-Campaign/Pantheon/Gods/Marvos"),
-          single("Minara", "/Pirate-Campaign/Pantheon/Gods/Minara")
-        ]
-      },
-
-      {
-        ...couple(
-          "Izelon",
-          "/Pirate-Campaign/Pantheon/Gods/Izelon",
-          "Fenrix",
-          "/Pirate-Campaign/Pantheon/Gods/Fenrix"
-        ),
-
-        children: [
-          single("Myrelon", "/Pirate-Campaign/Pantheon/Gods/Myrelon"),
-          single("Soryn", "/Pirate-Campaign/Pantheon/Gods/Soryn"),
-          single("Morvex", "/Pirate-Campaign/Pantheon/Gods/Morvex")
-        ]
-      },
-
-      {
-        ...couple(
-          "Eryx",
-          "/Pirate-Campaign/Pantheon/Gods/Eryx",
-          "Thesara",
-          "/Pirate-Campaign/Pantheon/Gods/Thesara"
-        ),
-
-        children: [
-          {
-            ...single(
-              "Eshara",
-              "/Pirate-Campaign/Pantheon/Gods/Eshara"
-            ),
-
-            children: [
-              single("Aureth", "/Pirate-Campaign/Pantheon/Gods/Aureth"),
-              single("Ceryn", "/Pirate-Campaign/Pantheon/Gods/Ceryn"),
-              single("Phaelon", "/Pirate-Campaign/Pantheon/Gods/Phaelon")
-            ]
-          }
-        ]
-      }
-
-    ]
-  }
-};
-
-new Treant(tree);
+links.forEach(([a, b]) => {
+  const n1 = nodes.find(n => n.id === a);
+  const n2 = nodes.find(n => n.id === b);
+  drawLine(n1.x, n1.y, n2.x, n2.y);
+});
 
 </script>
 
