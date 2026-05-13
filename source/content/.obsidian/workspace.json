@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1bc8642ac5f1e338",
+        "id": "1945955efe14891e",
         "type": "tabs",
         "children": [
           {
-            "id": "d160f9de345c4d65",
+            "id": "97aeee2cc56e197b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Races/index.md",
+                "file": "Pantheon/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,26 +22,26 @@
             }
           },
           {
-            "id": "a37331f27f08f04c",
+            "id": "32107c52e97feea1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Session Notes.md",
+                "file": "Pantheon/Relations.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Session Notes"
+              "title": "Relations"
             }
           },
           {
-            "id": "525f43eccafaaca7",
+            "id": "4999d29200f6f1f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Pantheon/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -50,35 +50,21 @@
             }
           },
           {
-            "id": "8d92f017666de7ea",
+            "id": "976924dabe2fb3a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pirate Crew.md",
+                "file": "Pantheon/Gods/Aionis.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pirate Crew"
-            }
-          },
-          {
-            "id": "c5bef81ad12c6d40",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Party Inventory.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Party Inventory"
+              "title": "Aionis"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -209,7 +195,7 @@
             }
           },
           {
-            "id": "176208f627559a28",
+            "id": "b910f6e5e4c39771",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -237,43 +223,43 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c5bef81ad12c6d40",
+  "active": "32107c52e97feea1",
   "lastOpenFiles": [
-    "index.md",
-    "Party Inventory.md",
     "Pirate Crew.md",
-    "Code/party_inventory.html",
+    "Pantheon/Relations.md",
+    "Code/pantheon_family_tree.html",
+    "Code/pantheon_family_tree.txt",
     "Code/New Text Document.txt",
-    "Code/ships.json",
+    "Pantheon/Gods/Liora.md",
     "Session Notes.md",
     "Races/index.md",
-    "Code/crew.json",
-    "Calendar.md",
-    "Code/dashboard.html.md",
-    "Code/dashboard.html",
-    "Code",
+    "Races",
+    "Planes of Existence/Shadowfell.md",
+    "Planes of Existence/index.md",
+    "Planes of Existence/Fey Wild.md",
+    "Planes of Existence",
+    "Party Inventory.md",
     "Images/Map.jpg",
     "Images",
-    "Planes of Existence/Shadowfell.md",
-    "Planes of Existence/Fey Wild.md",
-    "Planes of Existence/index.md",
-    "Planes of Existence",
+    "Code/ships.json",
+    "Code/party_inventory.html",
+    "Code/dashboard.html",
+    "Code/crew.json",
+    "Calendar.md",
+    "Kingdoms/Luscalis/History.md",
+    "Kingdoms/Elarion/History.md",
+    "Kingdoms/Luscalis/index.md",
     "Pantheon/index.md",
-    "Pantheon/Gods/Azzera.md",
-    "Races",
-    "Pantheon/Gods/Arkanis.md",
-    "Pantheon/Gods/Aionis.md",
-    "Pantheon/Gods/Nyraxis.md",
-    "Pantheon/Gods/Liora.md",
-    "Organizations/The Gullfeather Gazette.md",
-    "Organizations/The Black Tide.md",
-    "Organizations/index.md",
-    "Kingdoms/Velkara/index.md",
     "Kingdoms/Velkara/History.md",
-    "Kingdoms/Nymaros/index.md",
-    "Kingdoms/Marewyn/History.md",
-    "Kingdoms/Marewyn/index.md",
-    "Kingdoms/Lyvona/index.md",
-    "Pantheon/Gods"
+    "Pantheon/Gods/Arkanis.md",
+    "Pantheon/Gods/Morvex.md",
+    "Pantheon/Gods/Soryn.md",
+    "Pantheon/Gods/Myrelon.md",
+    "Pantheon/Gods/Pelarys.md",
+    "Pantheon/Gods/Nerion.md",
+    "Pantheon/Gods/Vaeril.md",
+    "Pantheon/Gods/Polimar.md",
+    "Pantheon/Gods/Thesara.md",
+    "Pantheon/Gods/Minara.md"
   ]
 }
