@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pantheon Family Tree</title>
+
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: Arial, sans-serif;
+}
+
+svg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.node {
+  fill: white;
+  stroke: #333;
+  stroke-width: 1.2px;
+}
+
+.text {
+  font-size: 13px;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.link {
+  stroke: #999;
+  stroke-width: 1.5px;
+}
+</style>
+</head>
+
+<body>
+
+<svg id="tree"></svg>
+
+<script>
+
+const svg = document.getElementById("tree");
+
+const nodes = [
+  { id: "Aionis", x: 400, y: 80 },
+
+  { id: "Izelon", x: 200, y: 220 },
+  { id: "Eryx", x: 400, y: 220 },
+  { id: "Nyraxis", x: 600, y: 220 },
+  { id: "Thamior", x: 800, y: 220 },
+
+  { id: "Myrelon", x: 200, y: 360 },
+  { id: "Soryn", x: 260, y: 360 },
+  { id: "Morvex", x: 320, y: 360 },
+
+  { id: "Eshara", x: 520, y: 360 },
+  { id: "Aureth", x: 480, y: 500 },
+  { id: "Ceryn", x: 560, y: 500 },
+  { id: "Phaelon", x: 640, y: 500 },
+
+  { id: "Nerion", x: 560, y: 360 },
+  { id: "Pelarys", x: 640, y: 360 },
+
+  { id: "Marvos", x: 780, y: 360 },
+  { id: "Minara", x: 840, y: 360 }
+];
+
+const links = [
+  ["Aionis", "Izelon"],
+  ["Aionis", "Eryx"],
+  ["Aionis", "Nyraxis"],
+  ["Aionis", "Thamior"],
+
+  ["Izelon", "Myrelon"],
+  ["Izelon", "Soryn"],
+  ["Izelon", "Morvex"],
+
+  ["Nyraxis", "Nerion"],
+  ["Nyraxis", "Pelarys"],
+
+  ["Thamior", "Marvos"],
+  ["Thamior", "Minara"],
+
+  ["Eryx", "Eshara"],
+  ["Eshara", "Aureth"],
+  ["Eshara", "Ceryn"],
+  ["Eshara", "Phaelon"]
+];
+
+function drawLine(x1, y1, x2, y2) {
+  const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+  line.setAttribute("x1", x1);
+  line.setAttribute("y1", y1);
+  line.setAttribute("x2", x2);
+  line.setAttribute("y2", y2);
+  line.setAttribute("class", "link");
+  svg.appendChild(line);
+}
+
+function drawNode(n) {
+  const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+
+  const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  circle.setAttribute("cx", n.x);
+  circle.setAttribute("cy", n.y);
+  circle.setAttribute("r", 28);
+  circle.setAttribute("class", "node");
+
+  const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+  text.setAttribute("x", n.x);
+  text.setAttribute("y", n.y + 5);
+  text.setAttribute("class", "text");
+  text.textContent = n.id;
+
+  g.appendChild(circle);
+  g.appendChild(text);
+  svg.appendChild(g);
+}
+
+nodes.forEach(drawNode);
+
+links.forEach(([a, b]) => {
+  const n1 = nodes.find(n => n.id === a);
+  const n2 = nodes.find(n => n.id === b);
+  drawLine(n1.x, n1.y, n2.x, n2.y);
+});
+
+</script>
+
+</body>
+</html>
