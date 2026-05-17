@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Calendar.md",
+                "file": "Pantheon/Gods/Cat Lord.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Calendar"
+              "title": "Cat Lord"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Calendar.md",
+                "file": "Pantheon/Gods/Cat Lord.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Calendar"
+              "title": "Backlinks for Cat Lord"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Calendar.md",
+                "file": "Pantheon/Gods/Cat Lord.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Calendar"
+              "title": "Outgoing links from Cat Lord"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Calendar.md",
+                "file": "Pantheon/Gods/Cat Lord.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Calendar"
+              "title": "Outline of Cat Lord"
             }
           },
           {
@@ -182,12 +182,32 @@
   },
   "active": "caebbfe36efb8284",
   "lastOpenFiles": [
-    "index.md",
-    "Naval Combat Rules.md",
-    "Pirate Crew.md",
-    "Session Notes.md",
-    "Party Inventory.md",
-    "Planes of Existence/The Hells.md",
+    "Pantheon/index.md",
+    "Pantheon/Gods/Cat Lord.md",
+    "Pantheon/Gods/Brannik.md",
+    "Pantheon/Gods/Aionis.md",
+    "Pantheon/Gods/Nyraxis.md",
+    "Pantheon/Gods/Pelarys.md",
+    "Pantheon/Gods/Phaelon.md",
+    "Pantheon/Gods/Polimar.md",
+    "Pantheon/Gods/Soryn.md",
+    "Pantheon/Gods/Thamior.md",
+    "Pantheon/Gods/Thesara.md",
+    "Pantheon/Gods/Thrixel.md",
+    "Pantheon/Gods/Vaeril.md",
+    "Pantheon/Gods/Vaeska.md",
+    "Pantheon/Gods/Yahweh.md",
+    "Pantheon/Gods/Zyras.md",
+    "Pantheon/Gods/Nerion.md",
+    "Pantheon/Gods/Myrelon.md",
+    "Pantheon/Gods/Morvex.md",
+    "Pantheon/Gods/Minara.md",
+    "Pantheon/Gods/Marvos.md",
+    "Pantheon/Gods/Maethe.md",
+    "Pantheon/Gods/Liora.md",
+    "Pantheon/Gods/Kaelgrim.md",
+    "Pantheon/Gods/Izelon.md",
+    "Pantheon/Gods/Fenrix.md",
     "Images/Combat.pdf",
     "Images/Map.jpg"
   ]

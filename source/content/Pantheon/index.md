@@ -33,6 +33,7 @@ Minor
 - Myrelon: Goddess of Destiny 
 - Soryn: God of Chance 
 - Morvex: God of Nullity 
+- Cat Lord: God of Cats 
 
 Past 
 - Aionis: God of Creation 
